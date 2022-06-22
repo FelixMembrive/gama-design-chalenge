@@ -1,10 +1,13 @@
 import searchIcon from "../../assets/icons/search.png"
+import "./SearchBar.css"
 
 export default function SearchBar() {
     return (
-            <form action="" >
+        <div className="search-bar">
+            <div>
                 <img src={searchIcon} />
                 <input placeholder="search here for your product" value="" />
-            </form>
+            </div>
+        </div>
     )
 }
