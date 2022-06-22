@@ -9,10 +9,10 @@ import "./IconsBox.css"
 export default function IconsBox() {
     return (
         <div className="icons-box">
-            <IconLink iconSrc={IconCheckout} />
-            <IconLink iconSrc={IconFavorites} />
-            <IconLink iconSrc={IconLocalization} />
-            <IconLink iconSrc={IconProfile} />
+            <IconLink iconSrc={IconCheckout} redirect={"/contato"} />
+            <IconLink iconSrc={IconFavorites} redirect={"/contato"} />
+            <IconLink iconSrc={IconLocalization} redirect={"contato"} />
+            <IconLink iconSrc={IconProfile} redirect={"/contato"} />
         </div>
     )
 }

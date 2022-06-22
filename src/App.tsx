@@ -1,14 +1,9 @@
-import { useState } from 'react'
-import Box from './components/Box/Box'
-import Header from './components/Header/Header'
+import Routes from './Routes';
 
-
-function App() {
+export default function App() {
   return (
-    <>
-      <Header/>
-    </>
+    <div className="App">
+      <Routes />
+    </div>
   )
 }
-
-export default App
