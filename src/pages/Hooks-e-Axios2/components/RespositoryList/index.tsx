@@ -13,11 +13,11 @@ interface IRepository {
 export default function RespositoryList() {
 
     const [repositories, setRepositories] = useState<IRepository[]>([]);
-
     function handleFavorite(id: number) {
         const newRepositories = repositories.map((repo) => {
-            return repo.id == id ? { ...repo, favorite: true } : repo
+            return (repo.id == id ? { ...repo, favorite: true } : repo)
         })
+        
         setRepositories(newRepositories)
     }
 
@@ -42,8 +42,7 @@ export default function RespositoryList() {
                         <RepositoryItem
                             key={repository.name}
                             repository={repository}
-                            handleFavorite={(id) => handleFavorite(id)}
-                        />
+                            handleFavorite={(id) => handleFavorite(id)} />
                     )
                 })}
             </ul>

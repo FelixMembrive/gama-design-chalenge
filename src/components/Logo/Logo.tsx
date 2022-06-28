@@ -1,4 +1,6 @@
-import "./Logo.css"
+// import "./Logo.css"
+import { LogoStyled } from "./style"
+
 
 type IconLogoProps = {
     logoSrc?: string
@@ -8,9 +10,9 @@ type IconLogoProps = {
 
 export default function Logo(props: IconLogoProps) {
     return (
-        <div className="horizontal-logo">
+        <LogoStyled className="horizontal-logo">
             <img src={props.logoSrc} />
             <a href={props.redirect}>{props.text}</a>
-        </div>
+        </LogoStyled>
     )
 }
